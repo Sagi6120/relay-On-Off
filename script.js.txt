@@ -1,0 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const turnOnButton = document.getElementById("turnOnButton");
+    const turnOffButton = document.getElementById("turnOffButton");
+
+    turnOnButton.addEventListener("click", function() {
+        // Simulate turning the relay ON
+        alert("Реле ВКЛЮЧЕНО"); // Replace this with actual code to turn on relay
+        console.log("Relay turned ON");
+    });
+
+    turnOffButton.addEventListener("click", function() {
+        // Simulate turning the relay OFF
+        alert("Реле ВЫКЛЮЧЕНО"); // Replace this with actual code to turn off relay
+        console.log("Relay turned OFF");
+    });
+});
