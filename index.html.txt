@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление реле</title>
+</head>
+<body>
+    <h1>Управление реле</h1>
+    <form action="/on" method="post">
+        <button type="submit">Включить реле</button>
+    </form>
+    <form action="/off" method="post">
+        <button type="submit">Выключить реле</button>
+    </form>
+</body>
+</html>
