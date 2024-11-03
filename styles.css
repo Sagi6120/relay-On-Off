@@ -1,36 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    text-align: center;
+    padding: 50px;
 }
 
 h1 {
+    font-size: 2em;
     color: #333;
 }
 
 button {
-    padding: 15px 25px;
+    font-size: 1.5em;
+    padding: 10px 20px;
     margin: 10px;
-    font-size: 18px;
-    cursor: pointer;
+    color: #fff;
+    background-color: #007BFF;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50; /* Green */
-    color: white;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #0056b3;
 }
 
 #statusMessage {
+    font-size: 1.2em;
     margin-top: 20px;
-    font-size: 18px;
-    color: #333;
+}
+
+#relayStatus {
+    font-weight: bold;
 }
