@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const turnOffButton = document.getElementById("turnOffButton");
     const statusMessage = document.getElementById("statusMessage");
 
-    // Define the API endpoint (replace <your_pi_ip> with the IP address of your Raspberry Pi)
-    const RELAY_API_URL = "http://<your_pi_ip>:5000";
+    // Define the API endpoint with the Raspberry Pi's IP address
+    const RELAY_API_URL = "http://192.168.19.56:5000";
 
     // Function to control the relay
     async function controlRelay(action) {
