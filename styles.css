@@ -1,45 +1,42 @@
+/* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Take up the full height of the screen */
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center; /* Center the text */
 }
 
 h1 {
-    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px; /* Space between the heading and buttons */
 }
 
+/* Style for buttons */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 20px 40px;
+    font-size: 24px; /* Bigger font */
     cursor: pointer;
-    margin-right: 10px;
-    background-color: #4CAF50; /* Green */body {
-    font-family: Arial, sans-serif;
     margin: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2rem;
-}
-
-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
-    margin: 10px;
     background-color: #4CAF50; /* Green */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s;
-    width: 200px; /* Default width */
-    max-width: 90%; /* Maximum width as percentage of the container */
+    width: 250px; /* Fixed width */
+    max-width: 90%; /* Button width as percentage of container */
+    box-sizing: border-box; /* Prevents padding from affecting button width */
 }
 
 button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
 
+/* Style for the status message */
 #statusMessage {
     margin-top: 20px;
     font-size: 18px;
@@ -50,54 +47,38 @@ button:hover {
 /* For small screens (less than 600px) */
 @media (max-width: 600px) {
     button {
-        font-size: 14px; /* Smaller font for small screens */
-        padding: 12px 24px; /* Smaller padding */
+        font-size: 18px; /* Smaller font for small screens */
+        padding: 15px 30px; /* Smaller padding */
         width: 80%; /* Make buttons take 80% of the screen width */
     }
 
     h1 {
-        font-size: 1.5rem; /* Smaller heading */
+        font-size: 2rem; /* Smaller heading */
     }
 }
 
 /* For medium screens (600px to 1200px) */
 @media (min-width: 600px) and (max-width: 1200px) {
     button {
-        font-size: 16px; /* Medium font size */
-        padding: 14px 28px; /* Medium padding */
-        width: 250px; /* Set a larger default width */
+        font-size: 20px; /* Medium font size */
+        padding: 18px 36px; /* Medium padding */
+        width: 70%; /* Make buttons take 70% of the screen width */
     }
 
     h1 {
-        font-size: 1.75rem; /* Adjust heading size */
+        font-size: 2.2rem; /* Adjust heading size */
     }
 }
 
 /* For large screens (larger than 1200px) */
 @media (min-width: 1200px) {
     button {
-        font-size: 18px; /* Larger font size */
-        padding: 15px 30px; /* Larger padding */
+        font-size: 24px; /* Larger font size */
+        padding: 20px 40px; /* Larger padding */
         width: 250px; /* Fixed width */
     }
 
     h1 {
-        font-size: 2rem; /* Larger heading */
+        font-size: 2.5rem; /* Larger heading */
     }
-}
-
-    color: white;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-#statusMessage {
-    margin-top: 20px;
-    font-size: 18px;
-    text-align: center;
 }
