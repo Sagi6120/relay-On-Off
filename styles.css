@@ -1,84 +1,53 @@
-/* Basic styling */
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Take up the full height of the screen */
-    background-color: #f4f4f4; /* Light background color */
-    text-align: center; /* Center the text */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px; /* Space between the heading and buttons */
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
 }
 
-/* Style for buttons */
+/* Button styling */
 button {
-    padding: 20px 40px;
-    font-size: 24px; /* Bigger font */
-    cursor: pointer;
-    margin: 20px;
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 10px;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
     transition: background-color 0.3s;
-    width: 250px; /* Fixed width */
-    max-width: 90%; /* Button width as percentage of container */
-    box-sizing: border-box; /* Prevents padding from affecting button width */
 }
 
+/* Button hover effect */
 button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
 
-/* Style for the status message */
+/* Status message styling */
 #statusMessage {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    color: #333;
 }
 
-/* Media Queries for responsive design */
-
-/* For small screens (less than 600px) */
-@media (max-width: 600px) {
+/* Responsive styling */
+@media screen and (max-width: 600px) {
     button {
-        font-size: 18px; /* Smaller font for small screens */
-        padding: 15px 30px; /* Smaller padding */
-        width: 80%; /* Make buttons take 80% of the screen width */
-    }
-
-    h1 {
-        font-size: 2rem; /* Smaller heading */
-    }
-}
-
-/* For medium screens (600px to 1200px) */
-@media (min-width: 600px) and (max-width: 1200px) {
-    button {
-        font-size: 20px; /* Medium font size */
-        padding: 18px 36px; /* Medium padding */
-        width: 70%; /* Make buttons take 70% of the screen width */
-    }
-
-    h1 {
-        font-size: 2.2rem; /* Adjust heading size */
-    }
-}
-
-/* For large screens (larger than 1200px) */
-@media (min-width: 1200px) {
-    button {
-        font-size: 24px; /* Larger font size */
-        padding: 20px 40px; /* Larger padding */
-        width: 250px; /* Fixed width */
-    }
-
-    h1 {
-        font-size: 2.5rem; /* Larger heading */
+        width: 80%;
     }
 }
